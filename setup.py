@@ -17,7 +17,7 @@ setuptools.setup(
     author="Eugenio Lacuesta",
     author_email="eugenio.lacuesta@gmail.com",
     url="https://github.com/scrapy-plugins/scrapy-playwright",
-    packages=["scrapy_playwright"],
+    packages=["scrapy_playwright", "rebrowser-playwright"],
     classifiers=[
         "Development Status :: 4 - Beta",
         "License :: OSI Approved :: BSD License",
@@ -36,6 +36,5 @@ setuptools.setup(
     python_requires=">=3.8",
     install_requires=[
         "scrapy>=2.0,!=2.4.0",
-        "rebrowser-playwright>=1.15",
     ],
 )
