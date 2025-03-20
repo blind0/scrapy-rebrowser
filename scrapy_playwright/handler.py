@@ -10,8 +10,8 @@ from ipaddress import ip_address
 from time import time
 from typing import Awaitable, Callable, Dict, Optional, Tuple, Type, TypeVar, Union
 
-from playwright._impl._errors import TargetClosedError
-from playwright.async_api import (
+from rebrowser_playwright._impl._errors import TargetClosedError
+from rebrowser_playwright.async_api import (
     BrowserContext,
     BrowserType,
     Download as PlaywrightDownload,
