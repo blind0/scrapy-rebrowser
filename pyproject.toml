@@ -1,2 +1,34 @@
-[tool.black]
-line-length = 99
+[tool.poetry]
+name = "scrapy-rebrowser"
+version = "0.1.0"
+description = "rebrowser integration for Scrapy"
+authors = ["Eugenio Lacuesta <eugenio.lacuesta@gmail.com>"]
+license = "BSD"
+readme = "README.md"
+repository = "https://github.com/blind0/scrapy-rebrowser"
+packages = [{include = "scrapy_playwright"}]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: Scrapy",
+    "Intended Audience :: Developers",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+scrapy = ">=2.0,!=2.4.0"
+rebrowser-playwright = ">=1.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
